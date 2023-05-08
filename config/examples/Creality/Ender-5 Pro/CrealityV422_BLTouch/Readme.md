@@ -1,3 +1,6 @@
-Diese Firmware ist ungetestet!
-Uses Marlin 2.1.2
-Bei Problemen oder Fragen könnt ihr euch gern unter <https://kanuracer.eu/support/> melden.
+Uses Marlin 2.1.2  
+Download .bin: https://pcloud.kanuracer.eu/s/sxaCNMYNYJ8sotn  
+  
+Changes:  
+Configuration.h  
+	- //#define ENDER5_USE_BLTOUCH -> #define ENDER5_USE_BLTOUCH  
