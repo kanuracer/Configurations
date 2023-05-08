@@ -1,3 +1,39 @@
 Diese Firmware ist ungetestet!  
 Uses Marlin 2.1.2  
-Bei Problemen oder Fragen könnt ihr euch gern unter <https://kanuracer.eu/support/> melden.
+
+Changes:
+Configuration.h  
+#define HEATER_0_MAXTEMP 275 -> #define HEATER_0_MAXTEMP 310  
+#define HEATER_1_MAXTEMP 275 -> #define HEATER_1_MAXTEMP 310  
+#define HEATER_2_MAXTEMP 275 -> #define HEATER_2_MAXTEMP 310  
+#define HEATER_3_MAXTEMP 275 -> #define HEATER_3_MAXTEMP 310  
+#define HEATER_4_MAXTEMP 275 -> #define HEATER_4_MAXTEMP 310  
+#define HEATER_5_MAXTEMP 275 -> #define HEATER_5_MAXTEMP 310  
+#define HEATER_6_MAXTEMP 275 -> #define HEATER_6_MAXTEMP 310  
+#define HEATER_7_MAXTEMP 275 -> #define HEATER_7_MAXTEMP 310  
+#define BED_MAXTEMP      125 -> #define BED_MAXTEMP      120  
+#define PID_EDIT_MENU -> //#define PID_EDIT_MENU  
+#define EXTRUDE_MINTEMP 170 -> #define EXTRUDE_MINTEMP 180  
+#define EXTRUDE_MAXLENGTH 600 -> #define EXTRUDE_MAXLENGTH 1000  
+#define THERMAL_PROTECTION_CHAMBER -> //#define THERMAL_PROTECTION_CHAMBER  
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 93 } -> #define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.9, 79.6, 406.6, 424.9 }  
+#define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 5000 } -> #define DEFAULT_MAX_ACCELERATION      { 500, 500, 100, 1000 }  
+#define JUNCTION_DEVIATION_MM 0.08 -> #define JUNCTION_DEVIATION_MM 0.013   
+//#define BLTOUCH -> #define BLTOUCH  
+#define NOZZLE_TO_PROBE_OFFSET { 44, -6, -2.35 } -> #define NOZZLE_TO_PROBE_OFFSET {-31.94, -40.66, -2.92}  
+#define PROBING_MARGIN 10 -> #define PROBING_MARGIN 30  
+#define XY_PROBE_FEEDRATE (133*60) -> #define XY_PROBE_FEEDRATE (70*80)  
+#define Z_PROBE_OFFSET_RANGE_MIN -20 -> #define Z_PROBE_OFFSET_RANGE_MIN -10  
+#define Z_PROBE_OFFSET_RANGE_MAX 20 -> #define Z_PROBE_OFFSET_RANGE_MAX 10  
+//#define AUTO_BED_LEVELING_BILINEAR -> #define AUTO_BED_LEVELING_BILINEAR  
+//#define RESTORE_LEVELING_AFTER_G28 -> #define RESTORE_LEVELING_AFTER_G28  
+//#define PREHEAT_BEFORE_LEVELING -> #define PREHEAT_BEFORE_LEVELING  
+//#define LCD_BED_TRAMMING -> #define LCD_BED_TRAMMING  
+#define Z_SAFE_HOMING_X_POINT X_CENTER -> #define Z_SAFE_HOMING_X_POINT ((X_BED_SIZE - 10) / 2)  
+#define Z_SAFE_HOMING_Y_POINT Y_CENTER -> #define Z_SAFE_HOMING_Y_POINT ((Y_BED_SIZE - 10) / 2)  
+//#define NOZZLE_PARK_FEATURE -> #define NOZZLE_PARK_FEATURE  
+//#define PRINTCOUNTER -> #define PRINTCOUNTER  
+//#define ENCODER_NOISE_FILTER -> #define ENCODER_NOISE_FILTER  
+  
+Configuration_adv.h  
+//#define ADVANCED_PAUSE_FEATURE -> #define ADVANCED_PAUSE_FEATURE  
