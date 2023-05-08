@@ -1,7 +1,8 @@
 Diese Firmware ist ungetestet!  
 Uses Marlin 2.1.2  
 
-Changes:
+Changes:  
+  
 Configuration.h  
 #define HEATER_0_MAXTEMP 275 -> #define HEATER_0_MAXTEMP 310  
 #define HEATER_1_MAXTEMP 275 -> #define HEATER_1_MAXTEMP 310  
